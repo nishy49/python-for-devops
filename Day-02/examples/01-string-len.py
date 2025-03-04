@@ -1,3 +1,3 @@
-text = "Python is awesome"
-length = len(text)
-print("Length of the string:", length)
+text='MynameisNISHYFISHY'
+LOS=len(text)
+print (LOS)
