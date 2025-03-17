@@ -221,24 +221,41 @@ try:
 except ValueError:
     print("Error :InvalidInput")
 """
+
+"""
 def open_file(filename):
     try:
-        file = open(filename,"r")
-        print(file.read())
+        with open (filename,"r") as file:
+         print(file.read())
     except FileNotFoundError:
         print("Error : File not found")
     finally:
         print("Execution completed")
 
 open_file("example.txt")
-
-
-
-
-
-
-
-
+"""
+"""
+def read_and_write (filename,content):
+    try:
+        with open(filename,"w") as file:
+            file.write(content)
+        print("File written successfully:")
+    except Exception as e:
+        print(f"Error : {e}")
+    finally:
+        print("Exectution Completed")
+read_and_write("example.txt","Hello DeVops!,This is a test file")
+"""
+def append_to_file(filename,content):
+    try:
+        with open(filename,"a") as file:
+         file.write("\n" + content)
+        print("Content appended")
+    except Exception as e:
+        print(f"Error:{e}")
+    finally:
+        print("Exection completed")
+append_to_file("exampless.txt","Hi new file created")
 
 
 
