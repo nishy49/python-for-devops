@@ -228,7 +228,7 @@ def open_file(filename):
     except FileNotFoundError:
         print("Error : File not found")
     finally:
-        print("Exectuin completed")
+        print("Execution completed")
 
 open_file("example.txt")
 
